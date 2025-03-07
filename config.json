@@ -1,0 +1,19 @@
+{
+    "YOUR_DISCORD_TOKEN": "",
+
+    "TYPE": "PLAYING",
+    "name": "rpc name",
+    "details": "details",
+    "state": "state",
+
+    "applicationID": "1347659594360553594",
+    "largeImageName": "",
+    "largeImageHoverText": "",
+    "smallImageName": "",
+    "smallImageHoverText": "",
+
+    "button1Text": "",
+    "button1RedirectUrl": "",
+    "button2Text": "",
+    "button2RedirectUrl": ""
+}

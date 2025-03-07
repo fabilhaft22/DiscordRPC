@@ -1,0 +1,62 @@
+These are the instructions on how to edit your custom Rich Presence.
+
+Enter the config.json file and edit the variables you want to have shown
+NOTE: You dont need to fill out everything. E.g. If you do not want to use any buttons, leave button1Text and all corresponding variables empty ("").
+Make sure you always start and end your texts in qoutation marks (") or else the script wont work or in some cases it will crash for invalid json.
+
+
+Discord Token:
+If you didnt know by now, a selfbot requires your personal discord token to run. If you dont trust my script, look through the entire source code or just dont use it.
+If you dont know how to get your own Token, refer to this post on stackoverflow:
+https://stackoverflow.com/questions/67348339/any-way-to-get-my-discord-token-from-browser-dev-console
+
+TYPE:
+This will display the type of your activity, e.g. Playing, watching etc
+valid texts to use are:
+PLAYING, WATCHING, STREAMING, LISTENING, COMPETING
+
+name:
+this is the title of your rich Presence
+
+details:
+self explanatory
+
+state:
+State is probably (im not even sure tbh) used for stuff like "in lobby 1/4" etc. For the purpose of most custom Rich Presences, you can just use this as a second line of text under details or just leave it empty ("")
+
+
+----IF YOU WANT TO USE CUSTOM IMAGES:
+Adding images is a bit more complex
+first you need to create an application
+go to "discord.com/developers/", log into your discord account and click on "New Application"
+give it any name you want, it doesnt matter at all.
+
+Press on the application you created and go down to "Rich Presence"
+Under Art Assets, press on "Add Image(s)" and add the images you want to use(You can add more than 2, but only 2 at once are usable) and give them a proper name.
+NOTE: Discord may take a couple minutes to fully upload and cache your images.
+Still inside of the application, go to "General Information", look for "Application ID" and press on "copy"
+
+Into config.json, paste the application ID after "applicationID"
+Input the name of the image you want to use after "largeImageName"
+If you want to use a small image aswell, do the same for another image after "smallImageName"
+"largeImageHoverText" and "smallImageHoverText" are texts that appear if you hover over the images with your mouse.
+If you dont want any text to appear when hovering over the images, leave it empty ("").
+
+For button its basically the same proceedure as with the images
+"button1Text" and "button2Text" is the text that is being displayed on the buttons.
+"button1RedirectUrl" and "button2RedirectUrl" is the link the buttons redirect to upon clicking on them
+NOTE: You do not need to use buttons at all. If you dont care about buttons, just leave all of it empty ("").
+ANOTHER NOTE: For some reason discord does not show you your own buttons. So if you use buttons but they dont show up, try asking a friend or use an alt account to check if the buttons look the way you want them to look, because discord does not show it for yourself.
+
+
+
+HOW TO START THE RICH PRESENCE
+
+Open the folder in visual studio code, powershell or cmd and type the following:
+node .
+if "node ." doesnt work, try the following instead:
+node index.js
+
+if neither of those work, check if you have npm and node properly installed
+If you have further issues, find videos about how to run discord bots with (very important) discord.js
+This script is basically just a custom version of a discord js bot script and running it works the same way as discord bots.
