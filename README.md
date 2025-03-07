@@ -12,6 +12,12 @@ Disadvantages:
 - making sure you are able to run node.js
 - having to install node.js and npm and having to install 2 packages
 
+If you want to make your life a bit easier, you can download the [exe](https://github.com/fabilhaft22/DiscordRPC/releases/tag/v1.0.0exe) to skip the steps of installing nodejs and the packages
+Keep in mind, you will not be able to run this on a server properly using the exe.
+
+
+#IF YOU GO WITH THE SOURCE CODE INSTEAD OF THE EXE
+
 IF YOU DO WANT TO USE A SERVER TO HAVE THIS RUNNING PERMANENTLY
 - You can use any hoster that allows Discord Bots to be hosted (I personally use the free server that "lunes.host" provides. If you do decide to use this one aswell, make sure to enter their dashboard every 30 days or else they will delete the server including all files on the server)
 
