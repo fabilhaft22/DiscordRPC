@@ -23,7 +23,7 @@ RPCClient.on('ready', async () =>{
     RPC.setState(config.state)
 
     //try to add the images, if an application ID is defined
-    if(config.applicationID !== 0){
+    if(config.applicationID !== ""){
         RPC.setApplicationId(config.applicationID)
         if(config.largeImageName !== ""){
             let images = await Util.fetchAssets(config.applicationID)
