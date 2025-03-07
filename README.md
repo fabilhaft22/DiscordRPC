@@ -8,7 +8,7 @@ Benefits of using a selfbot for RPC:
 - Doesnt crash each time you change your discord status from offline to any other status.
 
 Disadvantages:
-- against discord ToS, but is very unlikely of being bannable, if youre not using a selfbot for obvious stuff like raiding or brag about using one (Please dont be stupid.)
+- against discord ToS, but is very unlikely of being bannable, if youre not using a selfbot for obvious stuff like raiding or you dont brag about using a selfbot one (Please dont be stupid.)
 - making sure you are able to run node.js
 - most likely having to install node.js and npm globally (not sure if you really need to install it, havent tested it, but you most likely have to.)
 
