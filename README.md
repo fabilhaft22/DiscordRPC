@@ -1,6 +1,6 @@
 # DiscordRPC
 
-This is a small and simple script to make a custom Discord Rich Presence in the form of a discord selfbot
+This is a small and simple script to make a custom Discord Rich Presence with the help of a discord selfbot
 
 Benefits of using a selfbot for RPC:
 - Can be run even if discord is not running on your pc.
