@@ -16,7 +16,7 @@ If you want to make your life a bit easier, you can download the [exe](https://g
 Keep in mind, you will not be able to run this on a server properly using the exe.
 
 
-#IF YOU GO WITH THE SOURCE CODE INSTEAD OF THE EXE
+## IF YOU GO WITH THE SOURCE CODE INSTEAD OF THE EXE
 
 IF YOU DO WANT TO USE A SERVER TO HAVE THIS RUNNING PERMANENTLY
 - You can use any hoster that allows Discord Bots to be hosted (I personally use the free server that "lunes.host" provides. If you do decide to use this one aswell, make sure to enter their dashboard every 30 days or else they will delete the server including all files on the server)
