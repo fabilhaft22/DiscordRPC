@@ -21,7 +21,7 @@ The following node.js packages have to be installed for this script to work
 ```
 npm i discord.js-selfbot-v13
 ```
-**discord.js-selfbot-rpc
+**discord.js-selfbot-rpc**
 ```
 npm i discord.js-selfbot-rpc
 ```
