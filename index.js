@@ -19,9 +19,9 @@ RPCClient.on('ready', async () =>{
     RPC.setName(config.title)
     RPC.setDetails(config.details)
 
-    if(config.state) RPC.setState(config.state)
-    if(config.startTimeStamp) RPC.setStartTimestamp(config.startTimeStamp)
-    if(config.endTimeStamp) RPC.setEndTimestamp(config.endTimeStamp)
+    if(config.state !== null) RPC.setState(config.state)
+    if(config.startTimeStamp !== null) RPC.setStartTimestamp(config.startTimeStamp)
+    if(config.endTimeStamp !== null) RPC.setEndTimestamp(config.endTimeStamp)
 
     //try to add the images, if an application ID is defined
     if(config.applicationID !== null){
@@ -43,29 +43,29 @@ RPCClient.on('ready', async () =>{
             for(let i = 0; i < images.length; i++){
                 if(images[i].name === config.smallImageName) RPC.setAssetsSmallImage(images[i].id)
             }
-            if(config.smallImageHoverText){
+            if(config.smallImageHoverText !== null){
                 RPC.setAssetsSmallText(config.smallImageHoverText);
             }
         }
     }
     //buttons
-    if(config.button1Text){
+    if(config.button1Text !== null){
         RPC.addButton(config.button1Text, config.button1RedirectUrl)
     }
-    if(config.button2Text){
+    if(config.button2Text !== null){
         RPC.addButton(config.button2Text, config.button2RedirectUrl)
     }
 
     //random experimental shit
-    if(config.platform) RPC.setPlatform(config.platform)
-    if(config.sessionId) RPC.sessionId = config.sessionId
-    if(config.url) RPC.setURL(config.url)
-    if(config.syncId) RPC.syncId = config.syncId
-    if(config.flags) RPC.flags = config.flags
-    if(config.emoji) RPC.emoji = config.emoji
-    if(config.party) RPC.setParty(config.party)
-    if(config.secrets) RPC.setJoinSecret(config.secrets)
-    if(config.metadata) RPC.metadata = config.metadata
+    if(config.platform !== null) RPC.setPlatform(config.platform)
+    if(config.sessionId !== null) RPC.sessionId = config.sessionId
+    if(config.url !== null) RPC.setURL(config.url)
+    if(config.syncId !== null) RPC.syncId = config.syncId
+    if(config.flags !== null) RPC.flags = config.flags
+    if(config.emoji !== null) RPC.emoji = config.emoji
+    if(config.party !== null) RPC.setParty(config.party)
+    if(config.secrets !== null) RPC.setJoinSecret(config.secrets)
+    if(config.metadata !== null) RPC.metadata = config.metadata
 
     //start RPC
     RPCClient.user.setActivity(RPC)
