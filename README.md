@@ -31,7 +31,10 @@ npm i discord.js-selfbot-v13
 ```
 npm i discord.js-selfbot-rpc
 ```
-
+**js-ini**
+```
+npm i js-ini --save
+```
 
 READ "instructions.txt" FOR INFO ON HOW TO GET THE RICH PRESENCE RUNNING PLEASE
 
